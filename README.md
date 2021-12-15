@@ -4,10 +4,10 @@ The Fixed-Wing UAV Simulator is a ROS package, aimed to modeling, developing and
 
 This simulation platform allows to understand the behavior of the flight control system by comparing and evaluating different indoor and outdoor scenarios, with a details level quite close to reality.
 
-# Installation Instructions - Ubuntu 20.04 with ROS Noetic and Gazebo 11
+# Installation Instructions - ROS Noetic and Gazebo 11
 
-To use the code developed and stored in this repository some preliminary actions are needed. They are listed below.
+To use the code developed and stored in this repository some preliminary actions are needed. They are listed below. The ROS Noetic is a version of ROS for Ubuntu Focal Fossa.
 
-1. Install and initialize ROS Melodic desktop full
+1. Install and initialize ROS Noetic desktop full
 
 $ sudo
