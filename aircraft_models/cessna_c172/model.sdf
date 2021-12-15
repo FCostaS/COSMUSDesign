@@ -154,7 +154,7 @@
       <rpyOffsets>0 0 0</rpyOffsets>
     </plugin>
 
-     <plugin name="cessna_ros" filename="libcessna_control.so"/>
+     <plugin name="cessna_ros" filename="libaircraft_control.so"/>
 
     </model>
 
