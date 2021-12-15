@@ -42,7 +42,9 @@ $ echo "export GAZEBO_MODEL_PATH=~/.gazebo/models" >>  ~/.bashrc
 $ source ~/.bashrc
 ```
 
-4. Launch example test
+# Basic Usage
+Launching the simulation is quite simple: it is enough to run in a terminal the command
 ```
 $ roslaunch aircraft_gazebo cessna_spawn.launch
 ```
+> Note: The first run of gazebo might take considerably long, as it will download some models from an online database. To avoid any problems when starting the simulation for the first time, you may run the gazebo command in the terminal line.
