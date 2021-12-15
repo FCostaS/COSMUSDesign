@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+
+  <arg name="world" default="empty"/>
+  <arg name="paused" default="false"/>
+  <arg name="use_sim_time" default="true"/>
+  <arg name="gui" default="true"/>
+  <arg name="headless" default="false"/>
+  <arg name="debug" default="false"/>
+  <arg name="verbose" value="true" />
+  <arg name="model" default="$(find aircraft_models)/cessna_c172/model.urdf"/>
+
+  <env name="GAZEBO_MODEL_PATH" value="${GAZEBO_MODEL_PATH}:$(find aircraft_models)"/>
+
+  <include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <arg name="world_name" value="$(find aircraft_gazebo)/worlds/mybot.world"/>
+    <arg name="debug" value="$(arg debug)" />
+    <arg name="gui" value="$(arg gui)" />
+    <arg name="paused" value="$(arg paused)"/>
+    <arg name="use_sim_time" value="$(arg use_sim_time)"/>
+    <arg name="headless" value="$(arg headless)"/>
+  </include>
+
+  <!-- Geral 0 -->
+  <node pkg="aircraft_communication" name="Network" type="Network.py" output="screen"></node>
+
+  <!-- UAV 1 -->
+  <group ns="/uav1">
+
+      <!-- Load the URDF into the ROS Parameter Server -->
+      <param name="/uav1/robot_description" command="cat $(find aircraft_models)/cessna_c172/model.sdf"/>
+
+      <!-- Run a python script to the send a service call to gazebo_ros to spawn a URDF robot -->
+      <node name="sdf_spawner" pkg="gazebo_ros" type="spawn_model" respawn="false" output="screen"
+            args="-sdf -model uav1 -param robot_description -x 0 -y 0 -z 0.1"/>
+
+      <node pkg="aircraft_communication" name="Client" type="Client.py" output="screen"> </node>
+      <node pkg="aircraft_communication" name="Odometry" type="Odometry.py" output="screen"> </node>
+  </group>
+
+
+  <!-- UAV 2 -->
+  <group ns="/uav2">
+
+    <param name="/uav2/robot_description" command="cat $(find aircraft_models)/cessna_c172/model.sdf"/>
+
+    <node name="sdf_spawner" pkg="gazebo_ros" type="spawn_model" respawn="false" output="screen"
+          args="-sdf -model uav2 -param robot_description -x 40 -y 0 -z 0.1"/>
+
+    <node pkg="aircraft_communication" name="Client" type="Client.py" output="screen"> </node>
+    <node pkg="aircraft_communication" name="Odometry" type="Odometry.py" output="screen"> </node>
+  </group>
+
+
+  <!-- UAV 3 -->
+  <group ns="/uav3">
+
+    <param name="/uav3/robot_description" command="cat $(find aircraft_models)/cessna_c172/model.sdf"/>
+
+    <node name="sdf_spawner" pkg="gazebo_ros" type="spawn_model" respawn="false" output="screen"
+          args="-sdf -model uav3 -param robot_description -x -40 -y 0 -z 0.1"/>
+
+    <node pkg="aircraft_communication" name="Client" type="Client.py" output="screen"> </node>
+    <node pkg="aircraft_communication" name="Odometry" type="Odometry.py" output="screen"> </node>
+
+  </group>
+  
+  <!-- UAV 4 -->
+  <group ns="/uav4">
+
+    <param name="/uav4/robot_description" command="cat $(find aircraft_models)/cessna_c172/model.sdf"/>
+
+    <node name="sdf_spawner" pkg="gazebo_ros" type="spawn_model" respawn="false" output="screen"
+          args="-sdf -model uav4 -param robot_description -x -80 -y 0 -z 0.1"/>
+
+    <node pkg="aircraft_communication" name="Client" type="Client.py" output="screen"> </node>
+    <node pkg="aircraft_communication" name="Odometry" type="Odometry.py" output="screen"> </node>
+
+  </group>
+  
+  <!-- UAV 5 -->
+  <group ns="/uav5">
+
+    <param name="/uav5/robot_description" command="cat $(find aircraft_models)/cessna_c172/model.sdf"/>
+
+    <node name="sdf_spawner" pkg="gazebo_ros" type="spawn_model" respawn="false" output="screen"
+          args="-sdf -model uav5 -param robot_description -x -120 -y 0 -z 0.1"/>
+
+    <node pkg="aircraft_communication" name="Client" type="Client.py" output="screen"> </node>
+    <node pkg="aircraft_communication" name="Odometry" type="Odometry.py" output="screen"> </node>
+
+  </group>
+
+  <!-- UAV 5 	
+  <group ns="/uav5">
+
+    <param name="/uav5/robot_description" command="cat $(find gazebo_models)/cessna_c172/model.sdf"/>
+
+    <node name="sdf_spawner" pkg="gazebo_ros" type="spawn_model" respawn="false" output="screen"
+          args="-sdf -model uav5 -param robot_description -x 80 -y 0 -z 0.1"/>
+
+    <node pkg="aircraft_communication" name="Client" type="Client.py" output="screen"> </node>
+
+  </group> -->
+  
+  
+    <!-- UAV urdf
+  <group ns="/uav4">
+    <param name="robot_description" command="cat $(find gazebo_models)/cessna_c172/model.urdf"/>
+    
+    <node name="urdf_spawner" pkg="gazebo_ros" type="spawn_model"
+    args="-urdf -model uav4 -param robot_description -x -60.0 -y 0.0 -z 0.1"/>
+
+<node pkg="hector_trajectory_server" type="hector_trajectory_server" name="hector_trajectory_server" output="screen">
+        <param name="target_frame_name" type="string" value="/map" />
+        <param name="source_frame_name" type="string" value="/cessna_c172__body" />
+        <param name="trajectory_update_rate" type="double" value="4" />
+        <param name="trajectory_publish_rate" type="double" value="0.25" />
+      </node>
+
+   <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher"/>
+   <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher"/>
+    </group> -->
+
+
+</launch>
