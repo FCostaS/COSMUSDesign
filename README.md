@@ -9,5 +9,9 @@ This simulation platform allows to understand the behavior of the flight control
 To use the code developed and stored in this repository some preliminary actions are needed. They are listed below. The ROS Noetic is a version of ROS for Ubuntu Focal Fossa.
 
 1. Install and initialize ROS Noetic desktop full
-
+```
 $ sudo
+
+```
+
+2. If you don't have ROS workspace yet you can do so by
