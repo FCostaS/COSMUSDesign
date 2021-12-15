@@ -22,7 +22,6 @@ $ sudo apt install python3-rosdep python3-rosinstall python3-rosinstall-generato
 $ sudo apt install python3-rosdep
 $ sudo rosdep init
 $ rosdep update
-
 ```
 
 2. If you don't have ROS workspace yet you can do so by
