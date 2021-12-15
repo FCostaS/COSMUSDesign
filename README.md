@@ -48,3 +48,7 @@ Launching the simulation is quite simple: it is enough to run in a terminal the 
 $ roslaunch aircraft_gazebo cessna_spawn.launch
 ```
 > Note: The first run of gazebo might take considerably long, as it will download some models from an online database. To avoid any problems when starting the simulation for the first time, you may run the gazebo command in the terminal line.
+
+# Applications Usage
+
+See project wiki for more instructions and examples [here](https://github.com/FCostaS/Swarm-Fixed-Wing/wiki).
