@@ -18,10 +18,31 @@ $ sudo apt-get update
 $ sudo apt install ros-noetic-desktop-full
 $ echo "source /opt/ros/noetic/setup.bash" >> ~/.bashrc
 $ source ~/.bashrc
-$ sudo apt install python3-rosdep python3-rosinstall python3-rosinstall-generator python3-wstool build-essential
-$ sudo apt install python3-rosdep
+$ sudo apt install python3-rosdep python3-rosinstall python3-rosinstall-generator python3-wstool build-essential python3-catkin-tools
 $ sudo rosdep init
 $ rosdep update
 ```
 
 2. If you don't have ROS workspace yet you can do so by
+```
+$ mkdir -p ~/catkin_ws/src
+$ cd ~/catkin_ws/src
+$ sudo apt-get install 
+$ catkin_init_workspace
+$ cd ~/catkin_ws/
+$ catkin init
+```
+
+3. Add sourcing to your .bashrc file
+```
+$ git clone -b main https://github.com/FCostaS/Swarm-Fixed-Wing.git
+$ catkin build
+$ echo "source ~/catkin_ws/devel/setup.bash" >> ~/.bashrc
+$ echo "export GAZEBO_MODEL_PATH=~/.gazebo/models" >>  ~/.bashrc
+$ source ~/.bashrc
+```
+
+4. Launch example test
+```
+$ roslaunch aircraft_gazebo cessna_spawn.launch
+```
