@@ -51,4 +51,4 @@ $ roslaunch aircraft_gazebo cessna_spawn.launch
 
 # Developer Usage
 
-See [Fixed-Wing UAV Simulator wiki](https://github.com/FCostaS/Swarm-Fixed-Wing/wiki) for more instructions and examples.
+See [COSMUS Design wiki](https://github.com/FCostaS/COSMUS/wiki) for more instructions and examples.
