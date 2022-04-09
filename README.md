@@ -1,6 +1,6 @@
-# Fixed-Wing UAV Simulator
+# COSMUS Design (Co-Simulation Multi-UAV for Systems Design)
 
-The Fixed-Wing UAV Simulator is a ROS package, aimed to modeling, developing and testbed algorithms of navigation for Unmanned Aerial Vehicles (UAVs) with fixed-wing. The plataform has support for swarming applications and integration with MATLAB/Simulink.
+The COSMUS Design is a ROS package, aimed to modeling, developing and testbed algorithms of navigation for Unmanned Aerial Vehicles (UAVs) with fixed-wing. The plataform has support for swarming applications and integration with MATLAB/Simulink.
 
 This simulation platform allows to understand the behavior of the flight control system by comparing and evaluating different indoor and outdoor scenarios, with a details level quite close to reality.
 
