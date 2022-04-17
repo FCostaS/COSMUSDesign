@@ -1,0 +1,95 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <model name="receiver">
+
+    <!--  0° -->
+    <link name="router">
+      <pose>0 0 0.0 0 0 0</pose>
+      <gravity>0</gravity>
+    </link>
+
+    <link name="antenna_1">
+      <gravity>false</gravity>
+      <pose>0.5 0.5 0.5 0 0 0</pose>
+      <inertial>
+        <pose>-0.5 -0.5 -0.5 1.5708 0 0</pose>
+        <mass>0.1</mass>
+      </inertial>
+      <visual name="visual">
+        <pose>-0.5 -0.5 -0.5 1.5708 0 0</pose>
+		<geometry>
+		  <mesh>
+			<uri>model://wireless/meshes/antenna.dae</uri>
+		  </mesh>
+		</geometry>
+      </visual>
+      <sensor name="antenna_1" type="wireless_receiver">
+          <always_on>1</always_on>
+          <update_rate>100</update_rate>
+          <visualize>false</visualize>
+          <transceiver>
+            <min_frequency>2412.0</min_frequency>
+            <max_frequency>2484.0</max_frequency>
+            <power>14.6</power>
+            <gain>7</gain>
+            <sensitivity>-90.0</sensitivity>
+          </transceiver>
+	     <!-- <plugin name="scan_antenna_1" filename="libwifi_receiver.so"/> -->
+        </sensor>
+    </link>
+
+    <!-- 90°
+    <link name="antenna_2">
+      <gravity>false</gravity>
+      <pose>0.05 0.05 0.05 0 0 1.5708</pose>
+      <inertial>
+        <mass>0.1</mass>
+      </inertial>
+      <visual name="visual">
+				<pose>0.05 0.05 0.05 1.5708 0 0</pose>
+				<geometry>
+				<mesh>
+					<uri>model://wireless/meshes/antenna.dae</uri>
+				</mesh>
+				</geometry>
+      </visual>
+			<sensor name="antenna_2" type="wireless_receiver">
+          <always_on>1</always_on>
+          <update_rate>100</update_rate>
+          <visualize>false</visualize>
+          <transceiver>
+            <min_frequency>2412.0</min_frequency>
+            <max_frequency>2484.0</max_frequency>
+            <power>100.0</power>
+            <gain>15</gain>
+            <sensitivity>-90.0</sensitivity>
+          </transceiver>
+          <plugin name="scan_antenna_2" filename="libwifi_receiver.so"/>
+        </sensor>
+    </link>  -->
+
+    <joint name='antenna_1_joint' type='fixed'>
+      <parent>router</parent>
+      <child>antenna_1</child>
+      <pose>0.05 0.05 0.05 1.5708 0 0</pose>
+      <physics>
+        <ode>
+          <implicit_spring_damper>1</implicit_spring_damper>
+        </ode>
+      </physics>
+    </joint>
+
+    <!--
+    <joint name='antenna_2_joint' type='fixed'>
+      <parent>router</parent>
+      <child>antenna_2</child>
+      <pose>0.05 0.05 0.05 1.5708 0 0</pose>
+      <physics>
+        <ode>
+          <implicit_spring_damper>1</implicit_spring_damper>
+        </ode>
+      </physics>
+    </joint> -->
+
+  </model>
+</sdf>

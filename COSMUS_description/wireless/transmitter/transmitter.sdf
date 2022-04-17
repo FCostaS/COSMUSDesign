@@ -1,0 +1,62 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <model name="transmitter">
+    <link name="tx">
+      <gravity>false</gravity>
+      <pose>0.05 0.05 0.05 0 0 0</pose>
+      <inertial>
+        <mass>0.1</mass>
+      </inertial>
+      <visual name="visual">
+				<pose>0.05 0.05 0.05 1.5708 0 0</pose>
+        <geometry>
+            <box>
+            <size>0.05 0.05 0.05</size>
+            </box>
+        </geometry>
+      </visual>
+			<sensor name="wirelessTransmitter" type="wireless_transmitter">
+          <always_on>1</always_on>
+          <update_rate>100</update_rate>
+          <visualize>false</visualize>
+          <transceiver>
+            <essid>uav</essid>
+            <frequency>2442.0</frequency>
+            <power>14.6</power>
+            <gain>7</gain>
+          </transceiver>
+      </sensor>
+    </link>
+  </model>
+</sdf>
+
+<!-- <?xml version="1.0" ?>
+<sdf version="1.5">
+<model name="antennaTX">
+
+	      <link name="antennaTransmitter">
+					<inertial>
+					  <mass>0.1</mass>
+					</inertial>
+					<visual name="base">
+					  <geometry>
+					    <box>
+					      <size>.05 .05 .05</size>
+					    </box>
+					  </geometry>
+					</visual>
+					<visual name="antenna">
+					  <pose>0 0 .1 1.5708 0 0</pose>
+					  <geometry>
+					  <mesh>
+					    <uri>model://wireless/meshes/antenna.dae</uri>
+					  </mesh>
+					  </geometry>
+					</visual>
+				</link>
+
+				<!-- <sensor name="wifiTransmitter" type="wireless_transmitter">
+
+	      </sensor> -->
+</model>
+</sdf> -->

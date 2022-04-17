@@ -1,0 +1,34 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <model name="transmitter_station">
+    <pose>0 0 0.495 0 0 0</pose>
+
+    <link name="station">
+      <gravity>false</gravity>
+      <pose>1 1 1 0 0 0</pose>
+      <inertial>
+        <mass>0.1</mass>
+      </inertial>
+      <visual name="visual">
+				<pose>-2 -2 -2 0 0 0</pose>
+				<geometry>
+				<mesh>
+					<uri>model://wireless/meshes/station.dae</uri>
+				</mesh>
+				</geometry>
+      </visual>
+			<sensor name="wirelessTransmitter" type="wireless_transmitter">
+          <always_on>1</always_on>
+          <update_rate>100</update_rate>
+          <visualize>false</visualize>
+          <transceiver>
+            <essid>station</essid>
+            <frequency>2442.0</frequency>
+            <power>14.6</power>
+            <gain>7</gain>
+          </transceiver>
+      </sensor>
+    </link>
+
+  </model>
+</sdf>
