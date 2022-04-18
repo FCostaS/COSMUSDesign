@@ -8,11 +8,11 @@
   <license>
     Apache License, Version 2.0
   </license>
-  <author email="astrobee-fsw@nx.arc.nasa.gov">
-    ISAAC Flight Software
+  <author email="fcsouza14@unifesp.br">
+    COSMUS Design
   </author>
-  <maintainer email="astrobee-fsw@nx.arc.nasa.gov">
-    ISAAC Flight Software
+  <maintainer email="fcsouza14@unifesp.br">
+    COSMUS Design
   </maintainer>
   <buildtool_depend>catkin</buildtool_depend>
   <build_depend>roscpp</build_depend>
