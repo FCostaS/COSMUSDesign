@@ -3,7 +3,7 @@
   <name>cosmus_models</name>
   <version>0.0.0</version>
   <description>The cosmus_models package</description>
-  <maintainer email="fcsouza14@unifesp.br">jimmy</maintainer>
+  <maintainer email="fcsouza14@unifesp.br">Fabrício C. Souza</maintainer>
   <license>TODO</license>
 
   <buildtool_depend>catkin</buildtool_depend>
