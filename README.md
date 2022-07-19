@@ -35,7 +35,7 @@ $ catkin init
 
 3. Add sourcing to your .bashrc file
 ```
-$ git clone -b main https://github.com/FCostaS/Swarm-Fixed-Wing.git
+$ git clone -b main https://github.com/FCostaS/COSMUSDesign.git
 $ catkin build
 $ echo "source ~/catkin_ws/devel/setup.bash" >> ~/.bashrc
 $ echo "export GAZEBO_MODEL_PATH=~/.gazebo/models" >>  ~/.bashrc
@@ -45,7 +45,7 @@ $ source ~/.bashrc
 # Basic Usage
 Launching the simulation is quite simple: it is enough to run in a terminal the command
 ```
-$ roslaunch aircraft_gazebo cessna_spawn.launch
+$ roslaunch cosmus_gazebo cessna172_spawn.launch
 ```
 > Note: The first run of gazebo might take considerably long, as it will download some models from an online database. To avoid any problems when starting the simulation for the first time, you may run the gazebo command in the terminal line.
 
