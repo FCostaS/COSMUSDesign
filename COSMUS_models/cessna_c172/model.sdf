@@ -275,6 +275,14 @@
     	<xyzOffsets>0 0 0</xyzOffsets>
     	<rpyOffsets>0 0 0</rpyOffsets>
     </plugin>
+	    
+    <plugin name="p3d_base_controller" filename="libgazebo_ros_p3d.so">
+    	<updateRate>1000.0</updateRate>
+	<pressure_noise>1000.0</pressure_noise>
+	<max_pressure>10</max_pressure>
+	<pressure_bias>0.5</pressure_bias>
+	<airspeed_topic>airspeed</airspeed_topic>
+    </plugin>
 
     <plugin name="cessna_ros" filename="libaircraft_control.so"/>
 
