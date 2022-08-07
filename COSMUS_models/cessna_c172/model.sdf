@@ -265,7 +265,7 @@
         <control_joint_rad_to_cl>4.0</control_joint_rad_to_cl>
     </plugin>
 
-    <plugin name="p3d_base_controller" filename="libgazebo_ros_p3d.so">
+    <plugin name="gps_plugin" filename="libgazebo_ros_p3d.so">
     	<alwaysOn>true</alwaysOn>
     	<updateRate>1000.0</updateRate>
     	<bodyName>cessna_c172::body</bodyName>
