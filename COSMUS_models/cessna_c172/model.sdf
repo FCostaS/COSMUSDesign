@@ -278,7 +278,7 @@
 	    
     <plugin name="airspeed_plugin" filename="libairspeed_plugin.so">
     	<updateRate>1000.0</updateRate>
-	<pressure_noise>1000.0</pressure_noise>
+	<pressure_noise>1.0</pressure_noise>
 	<max_pressure>10</max_pressure>
 	<pressure_bias>0.5</pressure_bias>
 	<airspeed_topic>airspeed</airspeed_topic>
