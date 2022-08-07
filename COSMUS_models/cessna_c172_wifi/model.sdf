@@ -89,7 +89,7 @@
 	    </mesh>
         </geometry>
     	</visual>
-	    <sensor name="wirelessTransmitter" type="wireless_transmitter">
+	<sensor name="wirelessTransmitter" type="wireless_transmitter">
         <always_on>1</always_on>
         <update_rate>100</update_rate>
         <visualize>false</visualize>
@@ -105,6 +105,8 @@
             <power>14.6</power>
             <gain>7</gain>
             <sensitivity>-90</sensitivity>
+	    <model_type>okumura_hata</model_type>
+            <model_situation>urban</model_situation>
         </plugin>
         </sensor>
     </link>
