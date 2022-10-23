@@ -27,7 +27,7 @@
   <group ns="/uav1">
 
       <!-- Load the URDF into the ROS Parameter Server -->
-      
+
       <param name="/uav1/robot_description"
              command="$(find cosmus_utils)/sdf_parser $(find cosmus_models)/cessna_c172_wifi/model.sdf namespace:=uav1"/>
 
@@ -66,30 +66,30 @@
     <node pkg="cosmus_communication" name="Odometry" type="Odometry.py" output="screen"> </node>
   </group>
 
-  <!-- UAV 4 
+  <!-- UAV 4 -->
   <group ns="/uav4">
 
-    <param name="/uav4/robot_description" command="cat $(find cosmus_models)/cessna_c172/model.sdf"/>
+    <param name="/uav4/robot_description"
+           command="$(find cosmus_utils)/sdf_parser $(find cosmus_models)/cessna_c172_wifi/model.sdf namespace:=uav4"/>
 
     <node name="sdf_spawner" pkg="gazebo_ros" type="spawn_model" respawn="false" output="screen"
           args="-sdf -model uav4 -param robot_description -x 30 -y 0 -z 0.1"/>
 
     <node pkg="cosmus_communication" name="Client" type="Client.py" output="screen"> </node>
     <node pkg="cosmus_communication" name="Odometry" type="Odometry.py" output="screen"> </node>
+  </group>
 
-  </group> -->
-
-  <!-- UAV 5 
+  <!-- UAV 5 -->
   <group ns="/uav5">
 
-    <param name="/uav5/robot_description" command="cat $(find cosmus_models)/cessna_c172/model.sdf"/>
+    <param name="/uav5/robot_description"
+           command="$(find cosmus_utils)/sdf_parser $(find cosmus_models)/cessna_c172_wifi/model.sdf namespace:=uav5"/>
 
     <node name="sdf_spawner" pkg="gazebo_ros" type="spawn_model" respawn="false" output="screen"
           args="-sdf -model uav5 -param robot_description -x 60 -y 0 -z 0.1"/>
 
     <node pkg="cosmus_communication" name="Client" type="Client.py" output="screen"> </node>
     <node pkg="cosmus_communication" name="Odometry" type="Odometry.py" output="screen"> </node>
-
-  </group>-->
+  </group>
 
 </launch>

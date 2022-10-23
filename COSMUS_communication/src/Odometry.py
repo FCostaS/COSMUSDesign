@@ -10,6 +10,7 @@ from tf.transformations import euler_from_quaternion, quaternion_from_euler
 def get_rotation(x,y,z,w):
 
     (roll, pitch, yaw) = euler_from_quaternion ([x, y, z, w])
+    pitch = -pitch;
     return (roll, pitch, yaw)
 
 def callback(msg):

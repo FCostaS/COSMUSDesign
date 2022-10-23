@@ -33,7 +33,7 @@
     	<sensor name='camera1' type='camera'>
     		<visualize>0</visualize>
 	        <always_on>1</always_on>
-	        <update_rate>60</update_rate>
+	        <update_rate>30</update_rate>
 	        <camera name="head">
 	          <horizontal_fov>1.3962634</horizontal_fov>
 	          <image>
@@ -43,16 +43,24 @@
 	          </image>
 	          <clip>
 	            <near>0.02</near>
-	            <far>300</far>
+	            <far>1000</far>
 	          </clip>
+		  <noise>
+		  <type>gaussian</type>
+		  <!-- Noise is sampled independently per pixel on each frame.
+		       That pixel's noise value is added to each of its color
+		       channels, which at that point lie in the range [0,1]. -->
+		  <mean>0.0</mean>
+		  <stddev>0.007</stddev>
+		  </noise>
 	        </camera>
 	        <plugin name="camera_controller" filename="libgazebo_ros_camera.so">
 		        <alwaysOn>true</alwaysOn>
-		        <updateRate>0.0</updateRate>
+		        <updateRate>30.0</updateRate>
 		        <cameraName>camera</cameraName>
 		        <imageTopicName>image_raw</imageTopicName>
 		        <cameraInfoTopicName>camera_info</cameraInfoTopicName>
-		        <frameName>cam</frameName>
+		        <frameName>cam_link</frameName>
 		        <hackBaseline>0.07</hackBaseline>
 		        <distortionK1>0.0</distortionK1>
 		        <distortionK2>0.0</distortionK2>
@@ -74,7 +82,7 @@
         </physics>
     </joint>
 
-    <!-- Hokuyo laser range finder -->
+    <!-- Hokuyo laser range finder 
 	<link name="laser_link">
     	<gravity>false</gravity>
       	<pose>-0.5 0 2.1 0 0 0</pose>
@@ -108,13 +116,9 @@
 	        	<resolution>0.01</resolution>
 	        </range>
 	        <noise>
-	         	<type>gaussian</type>
-	          	<!-- Noise parameters based on published spec for Hokuyo laser
-	               achieving "+-30mm" accuracy at range < 10m.  A mean of 0.0m and
-	               stddev of 0.01m will put 99.7% of samples within 0.03m of the true
-	               reading. -->
-	        	<mean>0.0</mean>
-	        	<stddev>0.01</stddev>
+	        <type>gaussian</type>
+	        <mean>0.0</mean>
+	        <stddev>0.01</stddev>
 	        </noise>
 	      </ray>
 	      <plugin name="gazebo_ros_head_hokuyo_controller" filename="libgazebo_ros_gpu_laser.so">
@@ -122,7 +126,7 @@
 	        <frameName>laser_link</frameName>
 	      </plugin>
 	    </sensor>
-    </link>
+    </link> -->
 
     <joint name='laser_joint' type='fixed'>
         <parent>cessna_c172::body</parent>
@@ -145,12 +149,12 @@
         <right_flap>cessna_c172::right_flap_joint</right_flap>
         <elevators>cessna_c172::elevators_joint</elevators>
         <rudder>cessna_c172::rudder_joint</rudder>
-        <propeller_p_gain>10000</propeller_p_gain>
+        <propeller_p_gain>1000</propeller_p_gain>
         <propeller_i_gain>0</propeller_i_gain>
         <propeller_d_gain>0</propeller_d_gain>
         <surfaces_p_gain>2000</surfaces_p_gain>
         <surfaces_i_gain>1500</surfaces_i_gain>
-        <surfaces_d_gain>1400</surfaces_d_gain>
+        <surfaces_d_gain>0</surfaces_d_gain>
     </plugin>
 
     <plugin name="propeller_top_blade" filename="libLiftDragPlugin.so">
@@ -265,7 +269,7 @@
         <control_joint_rad_to_cl>4.0</control_joint_rad_to_cl>
     </plugin>
 
-    <plugin name="gps_plugin" filename="libgazebo_ros_p3d.so">
+    <plugin name="p3d_base_controller" filename="libgazebo_ros_p3d.so">
     	<alwaysOn>true</alwaysOn>
     	<updateRate>1000.0</updateRate>
     	<bodyName>cessna_c172::body</bodyName>
@@ -274,14 +278,6 @@
     	<frameName>world</frameName>
     	<xyzOffsets>0 0 0</xyzOffsets>
     	<rpyOffsets>0 0 0</rpyOffsets>
-    </plugin>
-	    
-    <plugin name="airspeed_plugin" filename="libairspeed_plugin.so">
-    	<updateRate>1000.0</updateRate>
-	<pressure_noise>1.0</pressure_noise>
-	<max_pressure>10</max_pressure>
-	<pressure_bias>0.5</pressure_bias>
-	<airspeed_topic>airspeed</airspeed_topic>
     </plugin>
 
     <plugin name="cessna_ros" filename="libaircraft_control.so"/>

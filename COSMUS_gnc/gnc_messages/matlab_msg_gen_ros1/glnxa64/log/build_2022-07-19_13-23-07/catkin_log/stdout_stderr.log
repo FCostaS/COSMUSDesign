@@ -1,0 +1,210 @@
+[0/1] Re-running CMake...
+CMake Warning (dev) in CMakeLists.txt:
+  No project() command is present.  The top-level CMakeLists.txt file must
+  contain a literal, direct call to the project() command.  Add a line of
+  code such as
+
+    project(ProjectName)
+
+  near the top of the file, but after cmake_minimum_required().
+
+  CMake is pretending there is a "project(Project)" command on the first
+  line.
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Using CATKIN_DEVEL_PREFIX: /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/devel
+-- Using CMAKE_PREFIX_PATH: /home/fabricio/MATLAB/R2021b/sys/ros1/glnxa64/ros1;/home/fabricio/MATLAB/R2021b/toolbox/ros/mlroscpp/custom_messages
+-- This workspace overlays: /home/fabricio/MATLAB/R2021b/sys/ros1/glnxa64/ros1;/home/fabricio/MATLAB/R2021b/toolbox/ros/mlroscpp/custom_messages
+-- Using PYTHON_EXECUTABLE: /home/fabricio/.matlab/R2021b/ros1/glnxa64/venv/bin/python2
+-- Using Debian Python package layout
+-- Using empy: /home/fabricio/.matlab/R2021b/ros1/glnxa64/venv/lib/python2.7/site-packages/em.pyc
+-- Using CATKIN_ENABLE_TESTING: off
+-- catkin 0.7.17
+-- BUILD_SHARED_LIBS is on
+-- BUILD_SHARED_LIBS is on
+-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-- ~~  traversing 2 packages in topological order:
+-- ~~  - cosmus_communication
+-- ~~  - cosmus_messages
+-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-- +++ processing catkin package: 'cosmus_communication'
+-- ==> add_subdirectory(cosmus_communication)
+-- Disabling the following message generators: geneus;genlisp;gennodejs
+-- Using these message generators: gencpp;genpy
+-- cosmus_communication: 3 messages, 0 services
+-- +++ processing catkin package: 'cosmus_messages'
+-- ==> add_subdirectory(cosmus_messages)
+-- Disabling the following message generators: geneus;genlisp;gennodejs
+-- Using these message generators: gencpp;genpy
+-- cosmus_messages: 10 messages, 0 services
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/build
+ninja: no work to do.
+[1/14] cd /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/build/cosmus_communication && /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/build/catkin_generated/env_cached.sh /home/fabricio/.matlab/R2021b/ros1/glnxa64/venv/bin/python2 /home/fabricio/MATLAB/R2021b/sys/ros1/glnxa64/ros1/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py cosmus_communication /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/src/cosmus_communication/msg/NetworkComm.msg cosmus_communication/Communication
+[2/14] cd /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/build/cosmus_messages && /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/build/catkin_generated/env_cached.sh /home/fabricio/.matlab/R2021b/ros1/glnxa64/venv/bin/python2 /home/fabricio/MATLAB/R2021b/sys/ros1/glnxa64/ros1/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py cosmus_messages /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/src/cosmus_messages/msg/Vector3D.msg
+[3/14] cd /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/build/cosmus_messages && /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/build/catkin_generated/env_cached.sh /home/fabricio/.matlab/R2021b/ros1/glnxa64/venv/bin/python2 /home/fabricio/MATLAB/R2021b/sys/ros1/glnxa64/ros1/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py cosmus_messages /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/src/cosmus_messages/msg/Datagram.msg cosmus_messages/Vector3D
+[4/14] cd /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/build/cosmus_messages && /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/build/catkin_generated/env_cached.sh /home/fabricio/.matlab/R2021b/ros1/glnxa64/venv/bin/python2 /home/fabricio/MATLAB/R2021b/sys/ros1/glnxa64/ros1/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py cosmus_messages /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/src/cosmus_messages/msg/Control_Surfaces.msg
+[5/14] cd /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/build/cosmus_messages && /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/build/catkin_generated/env_cached.sh /home/fabricio/.matlab/R2021b/ros1/glnxa64/venv/bin/python2 /home/fabricio/MATLAB/R2021b/sys/ros1/glnxa64/ros1/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py cosmus_messages /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/src/cosmus_messages/msg/Odom.msg
+[6/14] cd /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/build/cosmus_messages && /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/build/catkin_generated/env_cached.sh /home/fabricio/.matlab/R2021b/ros1/glnxa64/venv/bin/python2 /home/fabricio/MATLAB/R2021b/sys/ros1/glnxa64/ros1/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py cosmus_messages /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/src/cosmus_messages/msg/Communication.msg
+[7/14] cd /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/build/cosmus_communication && /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/build/catkin_generated/env_cached.sh /home/fabricio/.matlab/R2021b/ros1/glnxa64/venv/bin/python2 /home/fabricio/MATLAB/R2021b/sys/ros1/glnxa64/ros1/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py cosmus_communication /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/src/cosmus_communication/msg/Odom.msg
+[8/14] cd /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/build/cosmus_communication && /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/build/catkin_generated/env_cached.sh /home/fabricio/.matlab/R2021b/ros1/glnxa64/venv/bin/python2 /home/fabricio/MATLAB/R2021b/sys/ros1/glnxa64/ros1/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py cosmus_communication /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/src/cosmus_communication/msg/Communication.msg
+[9/14] cd /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/build/cosmus_messages && /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/build/catkin_generated/env_cached.sh /home/fabricio/.matlab/R2021b/ros1/glnxa64/venv/bin/python2 /home/fabricio/MATLAB/R2021b/sys/ros1/glnxa64/ros1/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py cosmus_messages /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/src/cosmus_messages/msg/WifiSignal.msg
+[10/14] cd /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/build/cosmus_messages && /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/build/catkin_generated/env_cached.sh /home/fabricio/.matlab/R2021b/ros1/glnxa64/venv/bin/python2 /home/fabricio/MATLAB/R2021b/sys/ros1/glnxa64/ros1/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py cosmus_messages /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/src/cosmus_messages/msg/NetworkComm.msg cosmus_messages/Communication
+[11/14] cd /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/build/cosmus_messages && /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/build/catkin_generated/env_cached.sh /home/fabricio/.matlab/R2021b/ros1/glnxa64/venv/bin/python2 /home/fabricio/MATLAB/R2021b/sys/ros1/glnxa64/ros1/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py cosmus_messages /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/src/cosmus_messages/msg/WifiSignals.msg cosmus_messages/WifiSignal
+[12/14] cd /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/build/cosmus_messages && /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/build/catkin_generated/env_cached.sh /home/fabricio/.matlab/R2021b/ros1/glnxa64/venv/bin/python2 /home/fabricio/MATLAB/R2021b/sys/ros1/glnxa64/ros1/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py cosmus_messages /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/src/cosmus_messages/msg/Airspeed.msg cosmus_messages/Vector3D:std_msgs/Header
+[13/14] cd /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/build/cosmus_messages && /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/build/catkin_generated/env_cached.sh /home/fabricio/.matlab/R2021b/ros1/glnxa64/venv/bin/python2 /home/fabricio/MATLAB/R2021b/sys/ros1/glnxa64/ros1/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py cosmus_messages /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/src/cosmus_messages/msg/Wind.msg cosmus_messages/Vector3D
+[13/14] Install the project...
+-- Install configuration: "Release"
+-- Installing: /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/install/_setup_util.py
+-- Up-to-date: /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/install/env.sh
+-- Up-to-date: /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/install/setup.bash
+-- Up-to-date: /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/install/local_setup.bash
+-- Up-to-date: /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/install/setup.sh
+-- Up-to-date: /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/install/local_setup.sh
+-- Up-to-date: /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/install/setup.zsh
+-- Up-to-date: /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/install/local_setup.zsh
+-- Up-to-date: /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/install/.rosinstall
+-- Up-to-date: /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/install/share/cosmus_communication/msg/Communication.msg
+-- Up-to-date: /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/install/share/cosmus_communication/msg/NetworkComm.msg
+-- Up-to-date: /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/install/share/cosmus_communication/msg/Odom.msg
+-- Up-to-date: /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/install/share/cosmus_communication/cmake/cosmus_communication-msg-paths.cmake
+-- Up-to-date: /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/install/include/cosmus_communication
+-- Up-to-date: /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/install/include/cosmus_communication/NetworkComm.h
+-- Up-to-date: /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/install/include/cosmus_communication/Communication.h
+-- Up-to-date: /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/install/include/cosmus_communication/Odom.h
+Listing /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/devel/lib/python2.7/dist-packages/cosmus_communication ...
+Listing /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/devel/lib/python2.7/dist-packages/cosmus_communication/msg ...
+-- Up-to-date: /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/install/lib/python2.7/dist-packages/cosmus_communication
+-- Up-to-date: /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/install/lib/python2.7/dist-packages/cosmus_communication/__init__.pyc
+-- Up-to-date: /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/install/lib/python2.7/dist-packages/cosmus_communication/__init__.py
+-- Up-to-date: /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/install/lib/python2.7/dist-packages/cosmus_communication/msg
+-- Up-to-date: /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/install/lib/python2.7/dist-packages/cosmus_communication/msg/_NetworkComm.py
+-- Up-to-date: /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/install/lib/python2.7/dist-packages/cosmus_communication/msg/__init__.pyc
+-- Up-to-date: /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/install/lib/python2.7/dist-packages/cosmus_communication/msg/_Communication.py
+-- Up-to-date: /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/install/lib/python2.7/dist-packages/cosmus_communication/msg/_NetworkComm.pyc
+-- Up-to-date: /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/install/lib/python2.7/dist-packages/cosmus_communication/msg/_Communication.pyc
+-- Up-to-date: /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/install/lib/python2.7/dist-packages/cosmus_communication/msg/_Odom.py
+-- Up-to-date: /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/install/lib/python2.7/dist-packages/cosmus_communication/msg/__init__.py
+-- Up-to-date: /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/install/lib/python2.7/dist-packages/cosmus_communication/msg/_Odom.pyc
+-- Installing: /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/install/lib/pkgconfig/cosmus_communication.pc
+-- Up-to-date: /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/install/share/cosmus_communication/cmake/cosmus_communication-msg-extras.cmake
+-- Up-to-date: /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/install/share/cosmus_communication/cmake/cosmus_communicationConfig.cmake
+-- Up-to-date: /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/install/share/cosmus_communication/cmake/cosmus_communicationConfig-version.cmake
+-- Installing: /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/install/share/cosmus_communication/package.xml
+-- Up-to-date: /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/install/include
+-- Up-to-date: /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/install/include/cosmus_communication
+-- Up-to-date: /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/install/include/cosmus_communication/visibility_control.h
+-- Up-to-date: /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/install/lib/libcosmus_communication_matlab.so
+-- Up-to-date: /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/install/m/
+-- Up-to-date: /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/install/m//+ros
+-- Up-to-date: /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/install/m//+ros/+internal
+-- Up-to-date: /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/install/m//+ros/+internal/+ros
+-- Up-to-date: /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/install/m//+ros/+internal/+ros/+custommessages
+-- Up-to-date: /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/install/m//+ros/+internal/+ros/+custommessages/+cosmus_communication
+-- Up-to-date: /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/install/m//+ros/+internal/+ros/+custommessages/+cosmus_communication/networkComm.m
+-- Up-to-date: /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/install/m//+ros/+internal/+ros/+custommessages/+cosmus_communication/odom.m
+-- Up-to-date: /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/install/m//+ros/+internal/+ros/+custommessages/+cosmus_communication/communication.m
+-- Up-to-date: /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/install/m//+ros/+msggen
+-- Up-to-date: /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/install/m//+ros/+msggen/+cosmus_communication
+-- Up-to-date: /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/install/m//+ros/+msggen/+cosmus_communication/NetworkComm.m
+-- Up-to-date: /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/install/m//+ros/+msggen/+cosmus_communication/Odom.m
+-- Up-to-date: /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/install/m//+ros/+msggen/+cosmus_communication/Communication.m
+-- Up-to-date: /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/install/share/cosmus_messages/msg/Airspeed.msg
+-- Up-to-date: /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/install/share/cosmus_messages/msg/Communication.msg
+-- Up-to-date: /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/install/share/cosmus_messages/msg/Control_Surfaces.msg
+-- Up-to-date: /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/install/share/cosmus_messages/msg/Datagram.msg
+-- Up-to-date: /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/install/share/cosmus_messages/msg/NetworkComm.msg
+-- Up-to-date: /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/install/share/cosmus_messages/msg/Odom.msg
+-- Up-to-date: /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/install/share/cosmus_messages/msg/Vector3D.msg
+-- Up-to-date: /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/install/share/cosmus_messages/msg/WifiSignal.msg
+-- Up-to-date: /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/install/share/cosmus_messages/msg/WifiSignals.msg
+-- Up-to-date: /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/install/share/cosmus_messages/msg/Wind.msg
+-- Up-to-date: /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/install/share/cosmus_messages/cmake/cosmus_messages-msg-paths.cmake
+-- Up-to-date: /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/install/include/cosmus_messages
+-- Up-to-date: /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/install/include/cosmus_messages/NetworkComm.h
+-- Up-to-date: /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/install/include/cosmus_messages/Datagram.h
+-- Up-to-date: /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/install/include/cosmus_messages/Wind.h
+-- Up-to-date: /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/install/include/cosmus_messages/Vector3D.h
+-- Up-to-date: /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/install/include/cosmus_messages/WifiSignal.h
+-- Up-to-date: /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/install/include/cosmus_messages/WifiSignals.h
+-- Up-to-date: /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/install/include/cosmus_messages/Control_Surfaces.h
+-- Up-to-date: /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/install/include/cosmus_messages/Communication.h
+-- Up-to-date: /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/install/include/cosmus_messages/Odom.h
+-- Up-to-date: /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/install/include/cosmus_messages/Airspeed.h
+Listing /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/devel/lib/python2.7/dist-packages/cosmus_messages ...
+Listing /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/devel/lib/python2.7/dist-packages/cosmus_messages/msg ...
+-- Up-to-date: /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/install/lib/python2.7/dist-packages/cosmus_messages
+-- Up-to-date: /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/install/lib/python2.7/dist-packages/cosmus_messages/__init__.pyc
+-- Up-to-date: /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/install/lib/python2.7/dist-packages/cosmus_messages/__init__.py
+-- Up-to-date: /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/install/lib/python2.7/dist-packages/cosmus_messages/msg
+-- Up-to-date: /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/install/lib/python2.7/dist-packages/cosmus_messages/msg/_Airspeed.pyc
+-- Up-to-date: /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/install/lib/python2.7/dist-packages/cosmus_messages/msg/_Wind.pyc
+-- Up-to-date: /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/install/lib/python2.7/dist-packages/cosmus_messages/msg/_Vector3D.pyc
+-- Up-to-date: /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/install/lib/python2.7/dist-packages/cosmus_messages/msg/_WifiSignal.py
+-- Up-to-date: /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/install/lib/python2.7/dist-packages/cosmus_messages/msg/_NetworkComm.py
+-- Up-to-date: /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/install/lib/python2.7/dist-packages/cosmus_messages/msg/_WifiSignal.pyc
+-- Up-to-date: /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/install/lib/python2.7/dist-packages/cosmus_messages/msg/_WifiSignals.pyc
+-- Up-to-date: /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/install/lib/python2.7/dist-packages/cosmus_messages/msg/__init__.pyc
+-- Up-to-date: /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/install/lib/python2.7/dist-packages/cosmus_messages/msg/_Datagram.py
+-- Up-to-date: /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/install/lib/python2.7/dist-packages/cosmus_messages/msg/_Wind.py
+-- Up-to-date: /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/install/lib/python2.7/dist-packages/cosmus_messages/msg/_Control_Surfaces.pyc
+-- Up-to-date: /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/install/lib/python2.7/dist-packages/cosmus_messages/msg/_WifiSignals.py
+-- Up-to-date: /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/install/lib/python2.7/dist-packages/cosmus_messages/msg/_Communication.py
+-- Up-to-date: /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/install/lib/python2.7/dist-packages/cosmus_messages/msg/_NetworkComm.pyc
+-- Up-to-date: /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/install/lib/python2.7/dist-packages/cosmus_messages/msg/_Vector3D.py
+-- Up-to-date: /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/install/lib/python2.7/dist-packages/cosmus_messages/msg/_Datagram.pyc
+-- Up-to-date: /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/install/lib/python2.7/dist-packages/cosmus_messages/msg/_Communication.pyc
+-- Up-to-date: /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/install/lib/python2.7/dist-packages/cosmus_messages/msg/_Odom.py
+-- Up-to-date: /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/install/lib/python2.7/dist-packages/cosmus_messages/msg/__init__.py
+-- Up-to-date: /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/install/lib/python2.7/dist-packages/cosmus_messages/msg/_Control_Surfaces.py
+-- Up-to-date: /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/install/lib/python2.7/dist-packages/cosmus_messages/msg/_Odom.pyc
+-- Up-to-date: /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/install/lib/python2.7/dist-packages/cosmus_messages/msg/_Airspeed.py
+-- Installing: /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/install/lib/pkgconfig/cosmus_messages.pc
+-- Up-to-date: /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/install/share/cosmus_messages/cmake/cosmus_messages-msg-extras.cmake
+-- Up-to-date: /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/install/share/cosmus_messages/cmake/cosmus_messagesConfig.cmake
+-- Up-to-date: /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/install/share/cosmus_messages/cmake/cosmus_messagesConfig-version.cmake
+-- Installing: /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/install/share/cosmus_messages/package.xml
+-- Up-to-date: /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/install/include
+-- Up-to-date: /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/install/include/cosmus_messages
+-- Up-to-date: /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/install/include/cosmus_messages/visibility_control.h
+-- Up-to-date: /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/install/lib/libcosmus_messages_matlab.so
+-- Up-to-date: /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/install/m/
+-- Up-to-date: /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/install/m//+ros
+-- Up-to-date: /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/install/m//+ros/+internal
+-- Up-to-date: /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/install/m//+ros/+internal/+ros
+-- Up-to-date: /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/install/m//+ros/+internal/+ros/+custommessages
+-- Up-to-date: /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/install/m//+ros/+internal/+ros/+custommessages/+cosmus_messages
+-- Up-to-date: /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/install/m//+ros/+internal/+ros/+custommessages/+cosmus_messages/networkComm.m
+-- Up-to-date: /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/install/m//+ros/+internal/+ros/+custommessages/+cosmus_messages/odom.m
+-- Up-to-date: /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/install/m//+ros/+internal/+ros/+custommessages/+cosmus_messages/vector3D.m
+-- Up-to-date: /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/install/m//+ros/+internal/+ros/+custommessages/+cosmus_messages/wind.m
+-- Up-to-date: /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/install/m//+ros/+internal/+ros/+custommessages/+cosmus_messages/control_Surfaces.m
+-- Up-to-date: /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/install/m//+ros/+internal/+ros/+custommessages/+cosmus_messages/wifiSignals.m
+-- Up-to-date: /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/install/m//+ros/+internal/+ros/+custommessages/+cosmus_messages/datagram.m
+-- Up-to-date: /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/install/m//+ros/+internal/+ros/+custommessages/+cosmus_messages/communication.m
+-- Up-to-date: /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/install/m//+ros/+internal/+ros/+custommessages/+cosmus_messages/airspeed.m
+-- Up-to-date: /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/install/m//+ros/+internal/+ros/+custommessages/+cosmus_messages/wifiSignal.m
+-- Up-to-date: /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/install/m//+ros/+msggen
+-- Up-to-date: /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/install/m//+ros/+msggen/+cosmus_messages
+-- Up-to-date: /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/install/m//+ros/+msggen/+cosmus_messages/Wind.m
+-- Up-to-date: /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/install/m//+ros/+msggen/+cosmus_messages/NetworkComm.m
+-- Up-to-date: /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/install/m//+ros/+msggen/+cosmus_messages/Airspeed.m
+-- Up-to-date: /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/install/m//+ros/+msggen/+cosmus_messages/Odom.m
+-- Up-to-date: /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/install/m//+ros/+msggen/+cosmus_messages/Vector3D.m
+-- Up-to-date: /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/install/m//+ros/+msggen/+cosmus_messages/Control_Surfaces.m
+-- Up-to-date: /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/install/m//+ros/+msggen/+cosmus_messages/WifiSignals.m
+-- Up-to-date: /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/install/m//+ros/+msggen/+cosmus_messages/WifiSignal.m
+-- Up-to-date: /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/install/m//+ros/+msggen/+cosmus_messages/Communication.m
+-- Up-to-date: /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/install/m//+ros/+msggen/+cosmus_messages/Datagram.m
+Base path: /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64
+Source space: /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/src
+Build space: /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/build
+Devel space: /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/devel
+Install space: /home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/install
+####
+#### Running command: "ninja build.ninja" in "/home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/build"
+####
+####
+#### Running command: "ninja install install -j12 -l12" in "/home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/build"
+####

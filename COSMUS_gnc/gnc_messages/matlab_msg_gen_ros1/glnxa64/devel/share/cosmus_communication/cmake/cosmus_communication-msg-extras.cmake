@@ -1,0 +1,2 @@
+set(cosmus_communication_MESSAGE_FILES "/home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/src/cosmus_communication/msg/Communication.msg;/home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/src/cosmus_communication/msg/NetworkComm.msg;/home/fabricio/catkin_ws/src/COSMUS_gnc/gnc_messages/matlab_msg_gen_ros1/glnxa64/src/cosmus_communication/msg/Odom.msg")
+set(cosmus_communication_SERVICE_FILES "")
