@@ -14,7 +14,7 @@ Here the reference to the core paper are reported.
               volume={},
               number={},
               pages={},
-              doi={10.1109/JSYST.2014.2332494},
+              doi={},
               url={github.com/FCostaS/COSMUSDesign}
 }
 ```
