@@ -19,8 +19,6 @@ Here the reference to the core paper are reported.
 }
 ```
 
-@ARTICLE{6871367,  author={Whitehead, N. Peter and Scherer, William T. and Smith, Michael C.},  journal={IEEE Systems Journal},   title={Systems Thinking About Systems Thinking A Proposal for a Common Language},   year={2015},  volume={9},  number={4},  pages={1117-1128},  doi={10.1109/JSYST.2014.2332494}}
-
 # Installation Instructions
 ## Ubuntu 20.04 with ROS Noetic and Gazebo 11
 
