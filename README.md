@@ -4,6 +4,23 @@ The COSMUS Design is a Software-in-the-loop platform, aimed to modeling, develop
 
 This simulation platform allows to understand the behavior of the flight control system by comparing and evaluating different indoor and outdoor scenarios, with a details level quite close to reality.
 
+Here the reference to the core paper are reported.
+
+```console
+@ARTICLE{COSMUSDesign, author={Souza, Fabrício C. and Santos, Sérgio R. Barros Dos and Givigi, Sidney N.},
+              title={Multi-Fixed-Wing-UAV Software-in-the-Loop Simulation Platform for System Design},
+              journal={IEEE Systems Journal},
+              year={2022},
+              volume={},
+              number={},
+              pages={},
+              doi={10.1109/JSYST.2014.2332494},
+              url={github.com/FCostaS/COSMUSDesign}
+}
+```
+
+@ARTICLE{6871367,  author={Whitehead, N. Peter and Scherer, William T. and Smith, Michael C.},  journal={IEEE Systems Journal},   title={Systems Thinking About Systems Thinking A Proposal for a Common Language},   year={2015},  volume={9},  number={4},  pages={1117-1128},  doi={10.1109/JSYST.2014.2332494}}
+
 # Installation Instructions
 ## Ubuntu 20.04 with ROS Noetic and Gazebo 11
 
@@ -27,7 +44,7 @@ $ rosdep update
 ```
 $ mkdir -p ~/catkin_ws/src
 $ cd ~/catkin_ws/src
-$ sudo apt-get install 
+$ sudo apt-get install
 $ catkin_init_workspace
 $ cd ~/catkin_ws/
 $ catkin init
