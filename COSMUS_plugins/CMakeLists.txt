@@ -1,20 +1,12 @@
-# Copyright (c) 2021, United States Government, as represented by the
-# Administrator of the National Aeronautics and Space Administration.
+# Copyright (c) 2022, São Paulo-Brazil, Ontário-Canadá,
+# represented by UNIFESP - Universidade Federal de São Paulo
+# and CAPES - Coordenação de Aperfeiçoamento de Pessoal de Nível Superior
 #
 # All rights reserved.
 #
-# The "ISAAC - Integrated System for Autonomous and Adaptive Caretaking
-# platform" software is licensed under the Apache License, Version 2.0
+# The COSMUS Design platform is licensed under the Apache License, Version 2.0
 # (the "License"); you may not use this file except in compliance with the
-# License. You may obtain a copy of the License at
-#
-#     http://www.apache.org/licenses/LICENSE-2.0
-#
-# Unless required by applicable law or agreed to in writing, software
-# distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
-# WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
-# License for the specific language governing permissions and limitations
-# under the License.
+# License.
 
 cmake_minimum_required(VERSION 2.8.3)
 project(cosmus_plugins)
