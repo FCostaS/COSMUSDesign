@@ -20,6 +20,43 @@ Here the reference to the core paper are reported.
 ```
 
 # Installation Instructions
+## Ubuntu 18.04 with ROS Melodic and Gazebo 11
+1. Install and initialize ROS Melodic desktop full
+```
+$ sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
+$ sudo apt install curl # if you haven't already installed curl
+$ curl -s https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc | sudo apt-key add -
+$ sudo apt-get update
+$ sudo apt install ros-melodic-desktop-full
+$ echo "source /opt/ros/melodic/setup.bash" >> ~/.bashrc
+$ source ~/.bashrc
+$ sudo apt install python-rosdep python-rosinstall python-rosinstall-generator python-wstool build-essential
+$ sudo rosdep init
+$ rosdep update
+```
+
+2. If you don't have ROS workspace yet you can do so by
+```
+$ sudo apt-get install python-rosdep python-rosinstall-generator python-vcstool python-rosinstall build-essential
+$ sudo apt-get install python-catkin-tools
+$ sudo apt-get upgrade
+$ rosdep update
+$ source /opt/ros/melodic/setup.bash
+$ mkdir -p ~/catkin_ws/src
+$ cd ~/catkin_ws/src
+```
+
+3. Add sourcing to your .bashrc file
+```
+$ git clone -b main https://github.com/FCostaS/COSMUSDesign.git
+$ cd ~/catkin_ws/
+$ catkin build
+$ echo "source ~/catkin_ws/devel/setup.bash" >> ~/.bashrc
+$ echo "export GAZEBO_MODEL_PATH=~/.gazebo/models" >>  ~/.bashrc
+$ echo "source /opt/ros/melodic/setup.bash" >> ~/.bashrc
+$ source ~/.bashrc
+```
+
 ## Ubuntu 20.04 with ROS Noetic and Gazebo 11
 
 To use the code developed and stored in this repository some preliminary actions are needed. They are listed below. The ROS Noetic is a version of ROS for Ubuntu Focal Fossa.
