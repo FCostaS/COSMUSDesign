@@ -20,7 +20,7 @@ Here the reference to the core paper are reported.
 ```
 
 # Installation Instructions
-## Ubuntu 18.04 with ROS Melodic and Gazebo 11
+## Ubuntu 18.04 with ROS Melodic and Gazebo 9
 1. Install and initialize ROS Melodic desktop full
 ```
 $ sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
